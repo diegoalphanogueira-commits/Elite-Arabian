@@ -35,7 +35,7 @@ if(CONFIG.captureEndpoint){try{const response=await fetch(CONFIG.captureEndpoint
 form.classList.add('hidden');success.classList.remove('hidden');document.getElementById('hello').textContent=`${name.split(' ')[0]}, escolha como você quer conhecer a Elite Arabian.`;success.scrollIntoView({behavior:'smooth',block:'start'});});
 document.getElementById('group').onclick=()=>{if(!CONFIG.vipGroupUrl){showInfo('O link oficial do grupo VIP será configurado antes do lançamento.');return;}window.open(CONFIG.vipGroupUrl,'_blank','noopener,noreferrer');};
 document.getElementById('catalog').onclick=()=>openWhatsApp(`Olá! Meu nome é ${lead.name}. ${partnerText()} Gostaria de conhecer o catálogo de perfumes da Elite Arabian. Meu WhatsApp é ${lead.phone}.`);
-document.getElementById('home').onclick=()=>openWhatsApp(`Olá! Meu nome é ${lead.name}. ${partnerText()} Moro no Jardim Presidente Dutra ou em uma região próxima e gostaria de receber uma apresentação da perfumaria árabe na minha casa, para conhecer e experimentar as fragrâncias. Podemos verificar se meu endereço é atendido e combinar um horário? Meu WhatsApp é ${lead.phone}.`);
+document.getElementById('home').onclick=()=>openWhatsApp(`Olá! Meu nome é ${lead.name}. ${partnerText()} Gostaria de receber uma apresentação da perfumaria árabe em casa para conhecer e experimentar as fragrâncias. Vocês atendem o Jardim Presidente Dutra e bairros próximos? Podemos verificar meu endereço e combinar um horário? Meu WhatsApp é ${lead.phone}.`);
 document.getElementById('edit').onclick=()=>{result.innerHTML='';success.classList.add('hidden');form.classList.remove('hidden');form.scrollIntoView({behavior:'smooth',block:'start'});};
 })();
 </script></body></html>
