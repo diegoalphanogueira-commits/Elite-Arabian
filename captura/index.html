@@ -12,7 +12,7 @@
 <script>
 (()=>{'use strict';
 // CONFIGURAÇÃO DE LANÇAMENTO — preencher antes de distribuir QR Codes reais.
-const CONFIG={whatsapp:'',vipGroupUrl:'',captureEndpoint:''};
+const CONFIG={whatsapp:'5511925466121',vipGroupUrl:'',captureEndpoint:''};
 const q=new URLSearchParams(location.search);
 const raw=(q.get('parceiro')||q.get('ref')||'').trim().slice(0,100);
 const slug=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9_-]+/g,'-').replace(/^-+|-+$/g,'').slice(0,60);
